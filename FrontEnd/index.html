@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Kelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F3F8FF; /* Updated background color */
+            border: 1px solid #ccc;
+            background-image: url('Artboard 1.svg'); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 100vh;
+            margin: 0;
+            position: relative; /* Add this */
+        }
+
+        h1 {
+            font-size: 48;
+        }
+
+        p {
+            font-size: medium;
+        }
+        .text {
+            position: fixed;
+            top: 200px;
+            left: 170px;
+            width: 400px;
+            height: 600px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+        }
+
+        .login-container {
+            position: relative;
+            right: 20px;
+            align-items: center;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+            padding: 110px;
+            width: 300px;
+            height: 300px;
+            max-width: 100%;
+        
+        }
+        .login-container h1 {
+            font-size: 32px;
+        }
+        .input-group {
+            border-radius: 5px;
+            box-align: center;
+            width: 100%;
+            margin: 10px 0;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            margin-top: 7px;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 110%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 30px;
+        }
+        .login-button {
+            background-color: #FFC247;
+            font-weight: bold;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: medium;
+        }
+        .forgot-password {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .forgot-password a {
+            font-weight: bold; 
+            color: black;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h1>Atur Perkuliahan dengan Mudah</h1>
+        <p>Web App Pemesanan Ruang Kelas Amikom adalah sebuah platform yang dirancang khusus untuk meningkatkan efisiensi dan ketersediaan ruang kelas di Kampus Amikom.</p>
+    </div>
+    <div class="login-container">
+        <h1>Selamat Datang</h1>
+        <form action="Ruang.html" method="post">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button class="login-button" type="submit">Masuk</button>
+            <div class="forgot-password">
+                <a href="resetpassword.html">Lupa Password?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
