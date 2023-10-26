@@ -7,7 +7,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background: #FDB235;
+            background: #F7C95F;
+            font-family: Inter;
         }
         .judul {
             top: 100px;
@@ -30,25 +31,49 @@
             height: auto;
         }
         .container {
-            position: ;
+            position: sticky;
             margin-top: 120px;
         }
-        button {
-            font-weight: bold;
-            color: white;
-            background-color: blue;
-            border-radius: 30px;
-            width: 100px;
+        select, button, input {
+            border-width: 0px;
+            border-collapse: collapse;
+            text-align: center;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .row {
+            display: flex; 
+        }
+        .col {
+            flex: 1; /* Each column takes an equal amount of space */
         }
         .select {
-            position: relative;
-            left: 1100px;
-            top: 400px;
+            border-collapse: collapse;
+            position: fixed;
+            margin-bottom: 80px;
+            margin-right: 100px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .keluar{
+
+            border-collapse: collapse;
+            position: fixed;
+            margin-bottom: 80px;
+            margin-right: 260px;
+            right: 0px;
+            bottom: 0px;
+        }
+        button{
+            width: 120px;
+            background-color: #4335DE;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <div class="judul" methode="post">
+    <div class="judul" method="post">
         <a href="select.html">
             <h2>Ruang Kosong</h2> <img src="a.png" alt="Amikom" width="40px" height="auto">
         </a>
@@ -57,28 +82,28 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <button class="Gedung" type="menu" methode="">GEDUNG</button>
+                <button class="Gedung" type="menu" method="">GEDUNG</button>
                 <select id="gedungSelector">
-                    <option value="apple">Apple</option>
-                    <option value="banana">Banana</option>
-                    <option value="cherry">Cherry</option>
-                    <option value="orange">Orange</option>
-                    <option value="berry">berry</option>
+                    <option value="g2">Gedung 2</option>
+                    <option value="g3">Gedung 3</option>
+                    <option value="g4">Gedung 4</option>
+                    <option value="g5">Gedung 5</option>
+                    <option value="g6">Gedung 6</option>
+                    <option value="g7">Gedung 7</option>
                 </select>
             </div>
             <div class="col">
-                <button class="Hari" type="menu" methode="">Hari</button>
-                <!-- Replace the select element with a date input -->
+                <button class="Hari" type="menu" method="">Hari</button>
                 <input type="date" id="hariSelector">
             </div>
             <div class="col">
-                <button class="Jam" type="menu" methode="">Jam</button>
+                <button class="Jam" type="menu" method="">Jam</button>
                 <select id="jamSelector">
-                    <option value="apple">Apple</option>
-                    <option value="banana">Banana</option>
-                    <option value="cherry">Cherry</option>
-                    <option value="orange">Orange</option>
-                    <option value="berry">berry</option>
+                    <option value="1">07.00 - 08.40</option>
+                    <option value="2">08.50 - 10.30</option>
+                    <option value="3">10.40 - 12.20</option>
+                    <option value="4">13.20 - 15.00</option>
+                    <option value="5">15.30 - 17.10</option>
                 </select>
             </div>
         </div>
@@ -86,6 +111,11 @@
     <div class="select" action="select.html" method="post">
         <a href="ruang.html">
             <button>Submit</button>
+        </a>
+    </div>
+    <div class="keluar" action="select.html" method="post">
+        <a href="login.html">
+            <button >Keluar</button>
         </a>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
