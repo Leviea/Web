@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Selection Example</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #FDB235;
+        }
+        .judul {
+            top: 100px;
+        }
+        .judul h2 {
+            color: Black;
+            text-align: left;
+            position: absolute;
+            top: 45px;
+            left: 100px;
+            font-size: x-large;
+            font-weight: bold;
+            height: auto;
+        }
+        .judul img {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 60px;
+            height: auto;
+        }
+        .container {
+            position: ;
+            margin-top: 120px;
+        }
+        button {
+            font-weight: bold;
+            color: white;
+            background-color: blue;
+            border-radius: 30px;
+            width: 100px;
+        }
+        .select {
+            position: relative;
+            left: 1100px;
+            top: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="judul" methode="post">
+        <a href="select.html">
+            <h2>Ruang Kosong</h2> <img src="a.png" alt="Amikom" width="40px" height="auto">
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button class="Gedung" type="menu" methode="">GEDUNG</button>
+                <select id="gedungSelector">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="cherry">Cherry</option>
+                    <option value="orange">Orange</option>
+                    <option value="berry">berry</option>
+                </select>
+            </div>
+            <div class="col">
+                <button class="Hari" type="menu" methode="">Hari</button>
+                <!-- Replace the select element with a date input -->
+                <input type="date" id="hariSelector">
+            </div>
+            <div class="col">
+                <button class="Jam" type="menu" methode="">Jam</button>
+                <select id="jamSelector">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="cherry">Cherry</option>
+                    <option value="orange">Orange</option>
+                    <option value="berry">berry</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="select" action="select.html" method="post">
+        <a href="ruang.html">
+            <button>Submit</button>
+        </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
