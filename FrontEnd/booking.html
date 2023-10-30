@@ -5,16 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOOKING</title>
     <link rel="icon" href="https://raw.githubusercontent.com/Leviea/Web/main/FrontEnd/a.png" type="image/png">
-    <style >
+    <style>
         body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #F2F7FE;
+            margin: 0;
+            padding: 0;
+        }
+
+        .belakang {
+            position: fixed;
+            width: 97%;
+            left: -1%;
+            height: auto;
+            display: block;
+        }
+
+        .info {
+            position: fixed;
+            top: 36%;
+            left: 58%;
+            font-size: 28px;
+            font-weight: bold;
+            z-index: 2;
+            background: #4335DE;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .wm {
+            position: fixed;
+            bottom: 0%;
+            left: 5%;
+            width: 10%;
+            mix-blend-mode: overlay;
+        }
+
+        .kotak {
+            position: fixed;
+            top: 46%;
+            left: 55%;
+            width: 500px;
+            height: 320px;
+            border-radius: 40.525px;
+            background: #4335DE;
+        }
+
+        .ic {
+            margin-left: 50px;
+            color: white;
+            align-content: center;
+            align-items: baseline;
+            text-align: left;
+        }
+        
+        .l {
+            position: fixed;
+            padding-top: 2%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .t {
+            position: fixed;
+            padding-top: 6.7%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .w {
+            position: fixed;
+            padding-top: 12%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        p {
+            margin-top: -6vh;
+            margin-left: 9vh;
+            text-align: left;
+            font-size: X-large;
+            width: max-content;
+        }
+        
+        .login-button {
+            position: fixed;
+            width: 54vh;
+            height: 5vh;
+            top: 80vh;
+            background-color: #FFC247;
+            font-weight: bold;
+            color: black;
+            padding: 10px;
+            border-radius: 25px;
+            border-style: none;
+            cursor: pointer;
+            font-size: x-large;
             
+        }
+        .bar {
+            position: fixed;
+            top: 28%;
+            left: 22%;
+            width: 400px;
+            height: 10px;
+            mix-blend-mode: overlay;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 5px;
+        }
+        
+        .book {
+            position: fixed;
+            width: max-content;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 160px;
+            font-weight: bold;
+            color: blue;
+            z-index: 2;
+            background: linear-gradient(269.85deg, #FFB943 24.36%, #FFFFFF 100%);
+            -webkit-background-clip: text;
+            color: transparent;
         }
     </style>
 </head>
 
 <body>
-    <h1 style="Center">
-        Ini Tempat Booking Ruang
-    </h1> 
+    <div class="bg-container">
+        <img src="https://raw.githubusercontent.com/Leviea/Web/main/FrontEnd/Asset%203.png" class="belakang" alt="Background Image">
+    </div>
+
+    <div class="wm">
+        <img src="https://raw.githubusercontent.com/Leviea/Web/main/FrontEnd/wm.png">
+    </div>
+
+    <div class="info">
+        Informasi Ruangan
+    </div>
+    
+    <div class="bar"></div>
+    <div class="kotak">
+        <form action="ruang.html" method="get">
+            <div class="ic">
+                <div class="l">
+                    <img src="https://raw.githubusercontent.com/Leviea/Web/176dd16e0dcc3731f8b5424b7d0243c1758e8ff2/FrontEnd/l.svg">
+                    <p>7.3.1</p>
+                </div>
+                <div class="t">
+                    <img src="https://raw.githubusercontent.com/Leviea/Web/176dd16e0dcc3731f8b5424b7d0243c1758e8ff2/FrontEnd/t.svg">
+                    <p>Rabu, 4 Oktober 2023</p>
+                </div>
+                <div class="w">
+                    <img src="https://raw.githubusercontent.com/Leviea/Web/176dd16e0dcc3731f8b5424b7d0243c1758e8ff2/FrontEnd/w.svg">
+                    <p>10.30 - 12.20</p>
+                </div>
+                <div class="login-button">
+                    <button class="login-button" type="submit">Pesan Ruangan</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <h1 class="book">BOOK NOW</h1>
 </body>
 </html>
