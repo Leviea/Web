@@ -81,7 +81,7 @@
             align-items: center;
             flex-shrink: 0;            
         }
-        a{
+        a {
           text-decoration: none;
         }
         h1 {
@@ -105,7 +105,22 @@
           font-size: medium;
           border-style: none;
         }
-
+      .keluar {
+        position:fixed;
+        top: 8%;
+        left: 90%;
+        align-content: center;
+      }
+      .kembali {
+        position:fixed;
+        top: 8%;
+        left: 82%;
+        align-content: center;
+      }
+      .action {
+        background-color: #4335DE;
+        justify-content: center;
+      }
     </style>
 </head>
 <body>
@@ -114,7 +129,16 @@
           <h2>Ruang Kosong</h2> <img src="https://raw.githubusercontent.com/Leviea/Web/main/FrontEnd/a.png" alt="Amikom" width="40px" height="auto">
         </a>
     </div>
-
+    <div class="keluar" action="login.html" method="post">
+      <a href="login.html">
+          <button class="action">Keluar</button>
+      </a>
+  </div>
+  <div class="kembali" action="select.html" method="post">
+    <a href="select.html">
+        <button class="action">Kembali</button>
+    </a>
+</div>
     <div class="container">
           <table action="booking.html" method="post">
               <tr class="atas" style="background-color: #4335DE;">
