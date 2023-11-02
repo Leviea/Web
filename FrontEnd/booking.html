@@ -260,12 +260,12 @@
         ok.addEventListener('click', closePopup);
         window.addEventListener('click', outsideClick);
         
-        pbg.addEventListener('click', function(event){
-            if (event.target === pbg) {
-                popup.style.visibility = 'hidden';
-                pbg.style.visibility = 'hidden';
-            }
-        })
+            window.onclick(function(event){
+                if (event.target === pbg) {
+                    popup.style.visibility = 'hidden';
+                    pbg.style.visibility = 'hidden';
+                }
+            })
 
         function openPopup(){
             popup.style.visibility = 'visible';
